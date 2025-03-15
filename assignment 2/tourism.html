@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modhera Sun Temple</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="slide" id="slide1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRJ_KPWILvs1VNWmJCcGTstfw3XAhBZIZaEQ&s" alt="Temple Carvings">
+        <div class="overlay">
+            <h1>Unique Features of the Temple</h1>
+            <p><b>Sunlight Alignment:</b> Temple designed so that sun rays directly fall on the sanctum during equinoxes.</p>
+            <p><b>Carvings of Deities:</b> Vishnu, Shiva, and celestial beings.</p>
+            <p><b>Intricate Pillars & Toranas:</b> (archways)</p>
+            <button onclick="nextSlide(2)">Next</button>
+        </div>
+    </div>
+
+    <div class="slide" id="slide2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt_O3Zsjc_SUOkO2Dy4hUPavFMSml6y8i1Ng&s" alt="Temple Preservation">
+        <div class="overlay">
+            <h1>Preservation & Tourism</h1>
+            <p><b>Managed by:</b> ASI (Archaeological Survey of India)</p>
+            <p><b>Attracts:</b> History lovers & photographers</p>
+            <p><b>Nearby Attractions:</b> Rani Ki Vav (Patan), Sun Temple at Unjha</p>
+            <button onclick="nextSlide(3)">Next</button>
+        </div>
+    </div>
+
+    <div class="slide" id="slide3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRZSdz1p6SDtIcm90FkH4W0Tr6m0pPNiUVHg&s" alt="Temple at Sunrise">
+        <div class="overlay">
+            <h1>Conclusion</h1>
+            <p><b>Summary:</b> Modhera Sun Temple as an architectural & spiritual wonder.</p>
+            <p><b>Final Image:</b> Sunrise view of the temple.</p>
+            <a href="figma1.html" class="btn">back</a>
+        </div>
+    </div>
+
+    <script>
+        function nextSlide(slideNumber) {
+            document.querySelectorAll('.slide').forEach(slide => slide.style.display = 'none');
+            document.getElementById('slide' + slideNumber).style.display = 'block';
+        }
+        nextSlide(1); // Show first slide on load
+    </script>
+</body>
+</html>
